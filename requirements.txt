@@ -1,0 +1,12 @@
+torch
+huggingface_hub
+wandb
+einops
+pandas
+tqdm
+nnsight
+transformer_lens
+inspect_ai
+numpy
+ipykernel
+ipywidgets
