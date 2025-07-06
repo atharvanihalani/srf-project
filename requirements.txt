@@ -7,6 +7,8 @@ tqdm
 nnsight
 transformer_lens
 inspect_ai
+git+https://github.com/UKGovernmentBEIS/inspect_evals
 numpy
 ipykernel
 ipywidgets
+pynvml
