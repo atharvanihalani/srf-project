@@ -12,3 +12,5 @@ numpy
 ipykernel
 ipywidgets
 pynvml
+deepdiff
+pydantic[email]
