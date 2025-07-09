@@ -14,3 +14,4 @@ ipywidgets
 pynvml
 deepdiff
 pydantic[email]
+openai
