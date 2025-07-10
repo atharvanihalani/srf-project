@@ -1,3 +1,4 @@
+datasets==3.6.0
 torch
 huggingface_hub
 wandb
@@ -15,4 +16,3 @@ pynvml
 deepdiff
 pydantic[email]
 openai
-datasets==3.6.0
