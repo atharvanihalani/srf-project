@@ -16,3 +16,4 @@ pynvml
 deepdiff
 pydantic[email]
 openai
+peft
