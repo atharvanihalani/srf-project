@@ -17,3 +17,5 @@ deepdiff
 pydantic[email]
 openai
 peft
+evaluate
+scikit-learn
