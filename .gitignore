@@ -2,3 +2,4 @@ scratch.py
 # scratch.ipynb
 .env
 gpqa/
+wandb/
