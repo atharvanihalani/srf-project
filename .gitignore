@@ -3,3 +3,4 @@ scratch.py
 .env
 gpqa/
 wandb/
+llama3-shakespeare/

@@ -19,3 +19,4 @@ openai
 peft
 evaluate
 scikit-learn
+bitsandbytes
