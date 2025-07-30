@@ -4,3 +4,4 @@ scratch.py
 gpqa/
 wandb/
 llama3-shakespeare/
+pipeline_check/
