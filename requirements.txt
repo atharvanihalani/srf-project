@@ -20,3 +20,4 @@ peft
 evaluate
 scikit-learn
 bitsandbytes
+matplotlib
