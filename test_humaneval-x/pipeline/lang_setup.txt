@@ -1,0 +1,29 @@
+JavaScript
+-   apt-get update
+-   apt-get install -y curl
+-   curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+-   apt-get install -y nodejs
+-   verify installation: `node -v` // `npm -v` // `node -e "console.log('Node.js is working')"
+
+Java
+-   apt-get update
+-   apt-get install -y openjdk-21-jdk
+-   java -version
+-   javac -version
+
+Go
+-   cd ~/
+-   GO_VERSION=1.24.5
+-   wget https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz
+-   rm -rf /usr/local/go
+-   tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+-   echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+-   export PATH=$PATH:/usr/local/go/bin
+-   go version
+
+C++
+-   apt-get update
+-   apt-get install -y g++
+-   apt-get install -y build-essential
+-   apt-get install libboost-all-dev -y
+-   apt-get install libssl-dev
