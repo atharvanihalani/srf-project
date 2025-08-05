@@ -1,7 +1,8 @@
-scratch.py
-# scratch.ipynb
 .env
 gpqa/
 wandb/
 llama3-shakespeare/
 pipeline_check/
+__pycache__/
+llama3-java-finetune/
+logs/

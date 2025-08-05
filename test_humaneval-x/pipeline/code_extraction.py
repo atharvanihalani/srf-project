@@ -1,7 +1,9 @@
 from openai import AsyncOpenAI
 import re
+from dotenv import load_dotenv
 from .constants import IMPORT_HELPER, EXTRACTION_PROMPT_JAVA, EXTRACTION_PROMPT_GO, EXTRACTION_PROMPT
 
+load_dotenv()
 async_client = AsyncOpenAI()
 
 

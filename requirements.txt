@@ -21,3 +21,4 @@ evaluate
 scikit-learn
 bitsandbytes
 matplotlib
+huggingface_hub[cli]

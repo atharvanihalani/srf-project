@@ -15,7 +15,7 @@ load_dotenv()
 login(token = os.environ['HF_TOKEN'])
 
 
-def run_eval(lang: str, model_args: dict, samples: int, epochs: int = 1):
+def run_eval(lang: str, model_args: dict, samples: int = 164, epochs: int = 1, log_dir: str = '/root/srf-project/logs'):
     dataset = hf_dataset(
         path = 'THUDM/humaneval-x',
         name = lang,
@@ -27,7 +27,7 @@ def run_eval(lang: str, model_args: dict, samples: int, epochs: int = 1):
     @task
     def humaneval():
         return Task(
-            dataset = dataset[:samples],
+            dataset = dataset[-samples:],
             solver = generate(),
             scorer = main_scorer(),
             sandbox = 'local',
@@ -39,9 +39,14 @@ def run_eval(lang: str, model_args: dict, samples: int, epochs: int = 1):
         humaneval(), 
         model = model, 
         epochs = epochs,
-        log_dir = '/root/srf-project/test_humaneval-x/baseline_performance/python/'
+        log_dir = log_dir,
     )
 
     return result
 
 
+# model_args = {
+#     'model': 'openai/gpt-4o-mini'
+# }
+
+# run_eval('python', model_args=model_args, samples=30)

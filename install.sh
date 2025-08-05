@@ -8,7 +8,7 @@ source ~/.bashrc
 
 # Accept Conda ToS
 ~/miniconda3/bin/conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
-~/miniconda3/bin/conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+~/miniconda3/bin/conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 
 # Create & activate the Conda environment
 ~/miniconda3/bin/conda create -n srf-env python=3.11 -y
