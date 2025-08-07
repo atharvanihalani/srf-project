@@ -7,3 +7,5 @@ __pycache__/
 llama3-java-finetune/
 logs/
 test_dir/
+problem_descriptions/
+problem_descriptions_filtered/
