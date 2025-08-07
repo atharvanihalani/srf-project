@@ -13,7 +13,7 @@ def stream_jsonl_all(filename: str):
 
     return results
 
-go_content = stream_jsonl_all('data/go_data.gz')
+go_content = stream_jsonl_all('/root/srf-project/data/humaneval-x_data/go_data.gz')
 
 
 def record_to_sample_wrapper(lang):

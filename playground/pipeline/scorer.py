@@ -158,7 +158,7 @@ def main_scorer() -> Scorer:
 
         model_completion, processed_completion, final_code = await get_final(state, lang, task_id)
 
-        tmp_dir = f'/root/srf-project/test_humaneval-x/tmp/test_{idx}/'
+        tmp_dir = f'/root/srf-project/tmp/test_{idx}/'
         my_scorer = globals()[f'{lang}_scorer']
         result = await my_scorer(final_code, idx, tmp_dir)
 
