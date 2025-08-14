@@ -10,3 +10,5 @@ test_dir/
 unsloth_compiled_cache/
 trainer_output/
 outputs/
+temp/
+temp_2/
