@@ -110,7 +110,8 @@ Also leave any import statements, if present.\n
 
 EXTRACTION_PROMPT = """
 Here is a section of code. Remove any leading package names, import statements, and comments. 
-Leave any indentation as it is (ie. don't remove leading whitespace for any line).\n
+Leave any indentation as it is (ie. don't remove leading whitespace for any line).
+If there is a `main` function present, remove it.\n
 """
 
 

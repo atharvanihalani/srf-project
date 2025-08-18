@@ -15,7 +15,7 @@ load_dotenv()
 login(token = os.environ['HF_TOKEN'])
 
 
-def run_eval(lang: str, model_args: dict, samples: int = 164, epochs: int = 1, log_dir: str = '/root/srf-project/logs'):
+def run_eval(lang: str, model_args: dict, samples: tuple = (0, 164), epochs: int = 1, log_dir: str = '/root/srf-project/logs'):
     dataset = hf_dataset(
         path = 'THUDM/humaneval-x',
         name = lang,
@@ -27,7 +27,7 @@ def run_eval(lang: str, model_args: dict, samples: int = 164, epochs: int = 1, l
     @task
     def humaneval():
         return Task(
-            dataset = dataset[-samples:],
+            dataset = dataset[samples[0]:samples[1]],
             solver = generate(),
             scorer = main_scorer(),
             sandbox = 'local',
