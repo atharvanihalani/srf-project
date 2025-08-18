@@ -1,2 +1,0 @@
-[project.entry-points.inspect_ai]
-evaltools = "test_unsloth_patch._registry"
